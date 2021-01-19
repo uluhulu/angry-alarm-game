@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="?selectableItemBackground">
+
+    <RelativeLayout
+        android:id="@+id/alarm_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="?selectableItemBackgroundBorderless">
+
+        <TextView
+            android:id="@+id/alarm_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="00 : 00"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/text_color_black" />
+
+        <TextView
+            android:id="@+id/alarm_item_monday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alarm_item_time"
+            android:layout_alignParentLeft="true"
+            android:text="Пн"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/alarm_item_tuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alarm_item_time"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/alarm_item_monday"
+            android:text="Вт"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/alarm_item_wednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alarm_item_time"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/alarm_item_tuesday"
+            android:text="Ср"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/alarm_item_thursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alarm_item_time"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/alarm_item_wednesday"
+            android:text="Чт"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/alarm_item_friday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alarm_item_time"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/alarm_item_thursday"
+            android:text="Пт"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/alarm_item_saturday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alarm_item_time"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/alarm_item_friday"
+            android:text="Сб"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/alarm_item_sunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alarm_item_time"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/alarm_item_saturday"
+            android:text="Вс"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+        <Switch
+            android:id="@+id/alarm_item_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:checked="true"
+            android:theme="@style/SCBSwitch" />
+
+    </RelativeLayout>
+
+</FrameLayout>

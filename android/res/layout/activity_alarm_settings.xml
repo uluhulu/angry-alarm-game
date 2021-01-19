@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_white">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="#FF8C00"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            android:visibility="visible"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_icon"
+                android:background="@color/text_color_orange"
+                />
+            <ImageButton
+                android:id="@+id/set_alarm_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="330dp"
+                android:background="@color/text_color_orange"
+                android:scaleType="center"
+                android:src="@drawable/done_icon"
+                android:contentDescription="TODO" />
+        </android.support.v7.widget.Toolbar>
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            style="@style/myTimePickerStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/text_color_white"
+            android:headerBackground="#FFA500" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:background="@color/text_color_white"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="0dp">
+
+            <com.ulianasisoeva.angryalarm.screen.PlanTextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/circle_off"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Пн"
+                android:textColor="@color/text_color_black"
+                android:clickable="true"/>
+
+            <com.ulianasisoeva.angryalarm.screen.PlanTextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/circle_off"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Вт"
+                android:textColor="@color/text_color_black"
+                android:clickable="true"/>
+
+            <com.ulianasisoeva.angryalarm.screen.PlanTextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/circle_off"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Ср"
+                android:textColor="@color/text_color_black"
+                android:clickable="true"/>
+
+            <com.ulianasisoeva.angryalarm.screen.PlanTextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/circle_off"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Чт"
+                android:textColor="@color/text_color_black"
+                android:clickable="true"/>
+
+            <com.ulianasisoeva.angryalarm.screen.PlanTextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/circle_off"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Пт"
+                android:textColor="@color/text_color_black"
+                android:clickable="true"/>
+
+            <com.ulianasisoeva.angryalarm.screen.PlanTextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/circle_off"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Сб"
+                android:textColor="@color/text_color_black"
+                android:clickable="true"/>
+
+            <com.ulianasisoeva.angryalarm.screen.PlanTextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/circle_off"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Вс"
+                android:textColor="@color/text_color_black"
+                android:clickable="true"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_background_color">#FFFFFFFF</color>
+    <color name="text_color_white">#FFFFFFFF</color>
+    <color name="text_color_black">#000000</color>
+    <color name="text_color_orange">#FF8C00</color>
+    <color name="text_color_orange_lite">#FFA500</color>
+    <color name="colorPrimary">#795548</color>
+    <color name="colorPrimaryDark">#5D4037</color>
+    <color name="colorAccent">#CDDC39</color>
+</resources>

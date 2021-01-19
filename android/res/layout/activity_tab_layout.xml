@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:backgroundTint="#FF8C00"
+
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        app:tabSelectedTextColor="@color/text_color_white"
+        app:tabTextColor="@color/text_color_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFA500">
+
+    <android.support.design.widget.TabItem
+        android:id="@+id/alarm_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/alarm_icon"
+        android:text="Alarms"
+        />
+
+        <android.support.design.widget.TabItem
+        android:id="@+id/demo_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/demo_icon"
+        android:text="Demo" />
+
+
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/tablayout"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="ObsoleteLayoutParam" >
+
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>
